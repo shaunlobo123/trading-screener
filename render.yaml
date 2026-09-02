@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: trading-screener-backend
+    runtime: node
+    plan: free
+    region: frankfurt
+    branch: main
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: POSTGRES_HOST
+        sync: false
+      - key: POSTGRES_PORT
+        sync: false
+      - key: POSTGRES_DB
+        sync: false
+      - key: POSTGRES_USER
+        sync: false
+      - key: POSTGRES_PASSWORD
+        sync: false
+      # Optional norgate/finviz pools - defaults to POSTGRES_* if not set
+      # - key: NORGATE_POSTGRES_HOST
+      #   sync: false
+      # - key: NORGATE_DB
+      #   value: norgate_candlestick
+      # - key: CHART_RENDER_URL
+      #   value: http://chart-service:4090
