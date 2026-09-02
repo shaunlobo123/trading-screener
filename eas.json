@@ -10,14 +10,14 @@
     "preview": {
       "distribution": "internal",
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://trading-screener-backend.onrender.com"
+        "EXPO_PUBLIC_API_URL": "https://trading-screener-y52j.onrender.com"
       }
     },
     "production": {
       "distribution": "store",
       "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://trading-screener-backend.onrender.com"
+        "EXPO_PUBLIC_API_URL": "https://trading-screener-y52j.onrender.com"
       }
     }
   },

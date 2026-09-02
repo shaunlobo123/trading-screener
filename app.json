@@ -32,7 +32,7 @@
       "expo-secure-store"
     ],
     "extra": {
-      "apiUrl": "https://trading-screener-backend.onrender.com",
+      "apiUrl": "https://trading-screener-y52j.onrender.com",
       "eas": {
         "projectId": "REPLACE_WITH_EAS_PROJECT_ID"
       }
